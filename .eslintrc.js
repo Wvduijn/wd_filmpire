@@ -1,13 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: ['plugin:react/recommended', 'airbnb'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react'],
   rules: {
@@ -21,22 +21,22 @@ module.exports = {
       2,
       {
         namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
+        unnamedComponents: 'arrow-function'
+      }
     ],
     'max-len': [2, 250],
     'no-multiple-empty-lines': [
       'error',
       {
         max: 1,
-        maxEOF: 1,
-      },
+        maxEOF: 1
+      }
     ],
     'no-underscore-dangle': [
       'error',
       {
-        allow: ['_d', '_dh', '_h', '_id', '_m', '_n', '_t', '_text'],
-      },
+        allow: ['_d', '_dh', '_h', '_id', '_m', '_n', '_t', '_text']
+      }
     ],
     'object-curly-newline': 0,
     'react/jsx-filename-extension': 0,
@@ -51,8 +51,8 @@ module.exports = {
       {
         components: ['Link'],
         specialLink: ['to', 'hrefLeft', 'hrefRight'],
-        aspects: ['noHref', 'invalidHref', 'preferButton'],
-      },
+        aspects: ['noHref', 'invalidHref', 'preferButton']
+      }
     ],
     'comma-dangle': [
       'error',
@@ -61,8 +61,17 @@ module.exports = {
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never',
-      },
+        functions: 'never'
+      }
     ],
-  },
+    // 'import/no-extraneous-dependencies': [
+    //   'error',
+    //   {
+    //     devDependencies: false,
+    //     optionalDependencies: false,
+    //     peerDependencies: false
+    //   }
+    // ]
+    'import/no-extraneous-dependencies': 'off'
+  }
 };
