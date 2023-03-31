@@ -24,7 +24,7 @@ module.exports = {
         unnamedComponents: 'arrow-function'
       }
     ],
-    'max-len': [2, 250],
+    'max-len': [2, 350],
     'no-multiple-empty-lines': [
       'error',
       {
@@ -54,6 +54,7 @@ module.exports = {
         aspects: ['noHref', 'invalidHref', 'preferButton']
       }
     ],
+    'jsx-quotes': ['error', 'prefer-single'],
     'comma-dangle': [
       'error',
       {
@@ -72,6 +73,7 @@ module.exports = {
     //     peerDependencies: false
     //   }
     // ]
-    'import/no-extraneous-dependencies': 'off'
+    'import/no-extraneous-dependencies': 'off',
+    'no-param-reassign': 'off'
   }
 };
