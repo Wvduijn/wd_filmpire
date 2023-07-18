@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
 
-const FeaturedMovie = ({ movie, i }) => {
+const FeaturedMovie = ({ movie }) => {
   const classes = useStyles();
-
-  console.log('MOVIE', movie);
 
   if (!movie) return null;
   return (
